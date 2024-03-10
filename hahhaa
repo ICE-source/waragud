@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yes or No Button</title>
+<style>
+    button {
+        padding: 10px 20px;
+        font-size: 50px;
+        cursor: pointer;
+        border: 100px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h1>PINDOT UG TARUNG ARA</h1>
+
+<button id="yesButton" onclick="showMessage()">Yes</button>
+<button id="noButton" onclick="moveNoButton()">No</button>
+
+<script>
+function moveNoButton() {
+    var button = document.getElementById('noButton');
+    var maxX = window.innerWidth - button.clientWidth;
+    var maxY = window.innerHeight - button.clientHeight;
+    
+    var randomX = Math.floor(Math.random() * maxX);
+    var randomY = Math.floor(Math.random() * maxY);
+    
+    button.style.position = 'absolute';
+    button.style.left = randomX + 'px';
+    button.style.top = randomY + 'px';
+}
+
+function showMessage()
+{
+
+    alert('Hows life!');
+    alert('Musta naman ka ara!');
+    alert('Suruy ari VSU!');
+    alert('pangutan a sila kanus a magkuha sa NCII!');
+    alert('libri napud sunod ahh ahha!');
+    alert('Ari a ig anniversarry');
+
+}
+</script>
+</body>
+</html>
